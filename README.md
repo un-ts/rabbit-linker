@@ -12,6 +12,7 @@ The followings version and short version are both fine.
 
 - <https://rabbit-linker.vercel.app/gtimg/sogou_mac/1688992049>
 - <https://rabbit-linker.vercel.app/gtimg/sogou_mac/614d>
+- <https://rabbit-linker.vercel.app/gtimg/sogou_mac>
 
 ## Sponsors
 
