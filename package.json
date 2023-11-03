@@ -1,0 +1,54 @@
+{
+  "name": "rabbit-linker",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Stable link that redirects to random resource download link via Vercel.",
+  "repository": "git@github.com:un-ts/rabbit-linker.git",
+  "author": "JounQin <admin@1stg.me>",
+  "license": "MIT",
+  "private": true,
+  "packageManager": "yarn@4.0.1",
+  "scripts": {
+    "build": "playwright install chromium && tsx scripts/build",
+    "lint": "run-p 'lint:*'",
+    "lint:es": "eslint . --cache",
+    "lint:tsc": "tsc --noEmit",
+    "prepare": "simple-git-hooks",
+    "start": "vc dev"
+  },
+  "dependencies": {
+    "playwright": "^1.39.0"
+  },
+  "devDependencies": {
+    "@1stg/common-config": "^9.0.0",
+    "@octokit/request": "^8.1.4",
+    "@types/web": "^0.0.119",
+    "commitlint": "^18.2.0",
+    "eslint": "^8.52.0",
+    "lint-staged": "^13.3.0",
+    "npm-run-all": "^4.1.5",
+    "simple-git-hooks": "^2.9.0",
+    "tsx": "^3.14.0",
+    "typescript": "^5.2.2",
+    "vercel": "^32.5.0"
+  },
+  "resolutions": {
+    "prettier": "^2.8.8"
+  },
+  "commitlint": {
+    "extends": "@1stg"
+  },
+  "eslintConfig": {
+    "extends": "@1stg"
+  },
+  "eslintIgnore": [
+    "/public/index.html",
+    "!/.*.js"
+  ],
+  "prettier": "@1stg/prettier-config",
+  "renovate": {
+    "extends": [
+      "@1stg"
+    ]
+  }
+}
