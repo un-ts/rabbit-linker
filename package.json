@@ -9,15 +9,12 @@
   "private": true,
   "packageManager": "yarn@4.0.1",
   "scripts": {
-    "build": "playwright install chromium && tsx scripts/build",
+    "build": "tsx scripts/build",
     "lint": "run-p 'lint:*'",
     "lint:es": "eslint . --cache",
     "lint:tsc": "tsc --noEmit",
     "prepare": "simple-git-hooks",
     "start": "vc dev"
-  },
-  "dependencies": {
-    "playwright": "^1.39.0"
   },
   "devDependencies": {
     "@1stg/common-config": "^9.0.0",
