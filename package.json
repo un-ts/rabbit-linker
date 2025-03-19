@@ -19,7 +19,7 @@
   "devDependencies": {
     "@1stg/common-config": "^9.0.0",
     "@octokit/request": "^8.1.4",
-    "@types/web": "^0.0.119",
+    "@types/web": "^0.0.213",
     "commitlint": "^18.2.0",
     "eslint": "^8.52.0",
     "lint-staged": "^13.3.0",
